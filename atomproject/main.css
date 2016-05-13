@@ -1,0 +1,157 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+  width:100%;
+  background-color: rgb(225, 225, 228);
+}
+div.intro {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(images/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left;
+  background-attachment: fixed;
+  position: relative;
+}
+p.intro {
+  top: 20%;
+  left: 5%;
+  position: absolute;
+  margin: 5px;
+  padding-bottom: 3px;
+  color: rgb(223, 227, 233);
+  font-size: 210%;
+  font-family: "papyrus";
+  border-bottom: 1px dotted rgb(224, 224, 236);
+}
+p.intro1 {
+  margin: 0;
+  padding: 5px;
+  top: 12%;
+  left: 5%;
+  position: absolute;
+  font-family: "papyrus";
+  color: rgb(223, 227, 233);
+  font-size: 120%;
+}
+img.arrow {
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  right: 5%;
+  bottom: 4%;
+}
+
+
+
+
+
+
+
+div.about {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: rgb(79, 74, 62);
+  position: relative;
+  text-align: center;
+
+}
+p.about {
+  margin: 20px;
+  padding: 0;
+  height: 50px;
+  width: 200px;
+  color: white;
+  font-size: 30px;
+  font-family: "papyrus";
+  border-bottom: 1px solid rgb(224, 224, 236);
+  display: inline-block;
+  border-bottom-style: dotted;
+}
+div.aboutimg {
+  margin: 0;
+  padding: 0;
+  background-image: url(Images/profpic.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 45%;
+  width: 50%;
+  top: 150px;
+  vertical-align: center;
+  background-position: center;
+  position: absolute;
+  /*background-color: red;*/
+}
+div.aboutsummary {
+  margin: 0;
+  padding: 0;
+  /*background-color: red;*/
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  left: 50%;
+  top: 150px;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  font-family: "papyrus";
+}
+
+
+
+
+
+
+div.skills{
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  vertical-align: middle;
+  color: rgb(79, 74, 62);
+  position: relative;
+}
+p.skills{
+  margin:0;
+  padding:0;
+  left:0;
+  height: 80%;
+  width: 25%;
+  /*background-color: red;*/
+  position: absolute;
+  border-right: 3px dotted black;
+  top: 10%;
+  font-family: "papyrus";
+  font-size: 35px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 500px;
+}
+p.stats{
+  margin: 0;
+  padding:0;
+  position: absolute;
+  /*background-color: red;*/
+  left:26%;
+  top: 15%;
+  height:70%;
+  width:74%;
+  font-size: 20px;
+  font-family: "papyrus";
+  text-align: center;
+}
