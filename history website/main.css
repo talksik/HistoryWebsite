@@ -20,19 +20,19 @@ div.cover {
   position: relative;
   background-attachment: fixed;
   background-image: url(images/introbg.jpg);
-  overflow: hidden;
+  overflow: auto;
 
 }
 
 p.cover {
   margin: 0;
-  padding: 25% 0;
+  padding: 0;
   right: 0;
   text-align: center;
   height: 100%;
   position: absolute;
   width: 40%;
-  border: 5px solid red;
+  /*border: 5px solid red;*/ <-------border of title/quo tes place
   font-size: 30px;
 
 }
@@ -40,6 +40,7 @@ p.cover {
 /* nav Bar */
 .header {
     margin: 0;
+    padding: 0;
     position: fixed;
     top: 0px;
     height: 50px;
@@ -49,13 +50,15 @@ p.cover {
     z-index: 1;
 }
 
-li {
+ul.header li {
+  margin: 0;
   text-align: center;
   color: white;
-  padding: 5px;
+  padding: 20px;
   display: inline-block;
-  right: 50%;
 }
+
+
 
 
 /*------intro of Mr.Sewell segment------*/
@@ -96,7 +99,75 @@ div.music {
   margin:0;
   padding: 0;
   height: 30%;
-  position: absolute;
+  position: relative;
   width: 100%;
   background-color: grey;
+}
+
+
+
+/*--------Chapters---------*/
+
+
+
+div.chapters {
+  margin:0;
+  padding:0;
+  height: 100%;
+  width: 100%;
+  background-color: blue;
+  position: relative;
+  top: 0;
+}
+
+p.chapter1 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+p.chapter2 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  left: 10%;
+}
+
+p.chapter3 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  top: 30%;
+}
+
+p.chapter4 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  right: 0;
+}
+
+p.chapter5 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  right: 0;
+  top:30%;
 }
