@@ -1,4 +1,3 @@
-
 /*----------------loading screen disappears---------*/
 
 
@@ -66,17 +65,12 @@ $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
 
     $('.cover').css({
-      'transform' : 'translate(0px, '+ wScroll /10 +'%)'
+      'transform' : 'translate(0px, '+ wScroll /8 +'%)'
     });
 
     $('.cover1').css({
       'transform' : 'translate(0px, -'+ wScroll /15 +'%)'
     });
-
-    $('.music').css({
-      'transform' : 'translate(0px, -'+ wScroll /15 +'%)'
-    });
-
-
+    
 
 });
