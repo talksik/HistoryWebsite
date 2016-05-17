@@ -65,12 +65,15 @@ $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
 
     $('.cover').css({
-      'transform' : 'translate(0px, '+ wScroll /8 +'%)'
+      'transform' : 'translate(0px, '+ wScroll /16 +'%)'
     });
 
     $('.cover1').css({
       'transform' : 'translate(0px, -'+ wScroll /15 +'%)'
     });
-    
+
+    $('.music1').css({
+      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+    });
 
 });
