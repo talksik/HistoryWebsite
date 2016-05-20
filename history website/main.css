@@ -10,6 +10,21 @@ body {
   height: 100%;
   width: 100%;
   font-family: 'Press Start 2P', cursive;
+  background-color: rgb(7, 81, 119);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px black;
 }
 /*-------loading game page-----*/
 div.loader {
@@ -35,7 +50,7 @@ div.cover {
   background-image: url(images/wallpaper4.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   overflow: hidden;
 }
 
@@ -60,7 +75,7 @@ p.cover1 {
     margin: 0;
     padding: 0;
     position: fixed;
-    top: 0px;
+    top: 0;
     height: 50px;
     width: 100%;
     border: 1px dotted blue;
@@ -68,25 +83,47 @@ p.cover1 {
     background-size: cover;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    z-index: 2;
+    z-index: 1000;
+    opacity: .9;
+
 }
 
+ul.header {
+  border: 2px solid black;
+}
 ul.header li {
-  margin: 0;
   text-align: center;
-  color: #EF7126;
+  color: white;
   padding: 0;
   display: inline-block;
-  border: 10px solid black;
-  text-shadow: 2px 3px black;
+  /*border: 2px solid pink; */
+  text-shadow: 5px 3px black;
+  margin-top: .75%;
 }
-
+li.start{
+  margin: 0;
+  padding: 0;
+  margin-left: 20%;
+  margin-right: 3%;
+}
+li.end{
+  margin: 0;
+  padding: 0;
+  margin-left: 3%;
+  margin-right: 20%;
+}
+li.mid{
+  margin: 0;
+  padding: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+}
 ul.header a:link {
-  color: #EF7126;
+  color: white;
   text-decoration: none;
 }
 ul.header a:visited {
-  color: #EF7126;
+  color: white;
   text-decoration: none;
 }
 ul.header a:active {
@@ -134,7 +171,7 @@ p.intro2 {
 }
 
 
-/*---------music shit-----*/
+/*---------music section-----*/
 
 
 div.music {
@@ -142,12 +179,13 @@ div.music {
   padding: 0;
   height: 40%;
   position: relative;
+  background-position: center;
   width: 100%;
   background-image: url(images/wallpaper2.jpg);
   background-repeat: no-repeat;
   overflow: hidden;
-  background-position: center;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 
@@ -172,65 +210,141 @@ p.music1 {
 div.chapters {
   margin:0;
   padding:0;
-  height: 100%;
+  height: 150%;
   width: 100%;
   background-image: url(images/wallpaper3.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
   top: 0;
   z-index: 6;
   overflow: hidden;
   bottom: 0;
 }
-
-p.chapter1 {
-  margin: 0;
-  padding:0;
-  height: 450px;
-  width: 300px;
-  border: 2px solid red;
+ul.chapters {
   position: absolute;
-  left: 20%;
-  top: 20%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border: 2px solid red;
+  width: 100%;
+  display:inline-block;
 }
-
-p.chapter2 {
+li.chapter1 {
   margin: 0;
   padding:0;
   height: 450px;
   width: 300px;
   border: 2px solid red;
   position: absolute;
+  display: inline-block;
+  left: 10%;
+  top: 4%;
+}
+li.chapter2 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  display:inline-block;
+  top: 4%;
+  left: 40%;
+}
+li.chapter3 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  display:inline-block;
+  top: 4%;
+  right: 10%;
+}
+li.chapter4 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  display: inline-block;
+  top: 63%;
   left: 10%;
 }
-
-p.chapter3 {
+li.chapter5 {
   margin: 0;
   padding:0;
   height: 450px;
   width: 300px;
   border: 2px solid red;
   position: absolute;
-  top: 30%;
+  display:inline-block;
+  left: 40%;
+  top: 63%;
+}
+li.chapter6 {
+  margin: 0;
+  padding:0;
+  height: 450px;
+  width: 300px;
+  border: 2px solid red;
+  position: absolute;
+  display:inline-block;
+  right: 10%;
+  top: 63%;
 }
 
-p.chapter4 {
+
+/*-------about-------*/
+
+div.about {
   margin: 0;
-  padding:0;
-  height: 450px;
-  width: 300px;
-  border: 2px solid red;
+  padding: 0;
+  position: relative;
+  height: 60%;
+  width: 100%;
+  background-image: url(images/wallpaper5.jpg);
+  background-size: contain;
+  bottom: 0;
+  overflow: hidden;
+  top: 0;
+}
+img.mario {
   position: absolute;
-  right: 0;
+  opacity: .8;
+  height: 125px;
+  width: 125px;
+  left: 25%;
+  top: 0;
+}
+img.joystick {
+  position: absolute;
+  opacity: .8;
+  height: 125px;
+  width: 125px;
+  left: 5%;
+  top: 0;
+}
+img.mushroom {
+  position: absolute;
+  opacity: .6;
+  height: 125px;
+  width: 125px;
+  right: 35%;
+  top: 50%;
 }
 
-p.chapter5 {
+
+
+
+
+div.copyright {
   margin: 0;
-  padding:0;
-  height: 450px;
-  width: 300px;
-  border: 2px solid red;
-  position: absolute;
-  right: 0;
-  top:30%;
+  padding: 0;
+  height: 20%;
+  width: 100%;
+  background-color: rgb(7, 81, 119);
 }
