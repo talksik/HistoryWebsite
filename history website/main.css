@@ -241,6 +241,16 @@ li.chapter1 {
   left: 10%;
   top: 4%;
 }
+li.chapter1:hover {
+  box-shadow: inset -4.5px -3px 5px black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  opacity: .9;
+  background-color: white;
+  height: 445px;
+  width: 295px;
+}
 li.chapter2 {
   margin: 0;
   padding:0;
