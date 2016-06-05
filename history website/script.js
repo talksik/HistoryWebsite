@@ -2,7 +2,7 @@
 
 
 $(window).load(function(){
-    $(".loader").fadeOut(100);
+    $(".loader").fadeOut(3000);
 
 });
 
@@ -44,22 +44,10 @@ $(window).scroll(function(){
       'transform' : 'translate(0px, -'+ wScroll /15 +'%)'
     });
 
+
+
     $('.music1').css({
-      'transform' : 'translate(0px, '+ wScroll /3 +'%)'
-    });
-
-
-
-    $('.mushroom').css({
-      'transform' : 'translate(0px, -'+ wScroll /20 +'%)'
-    });
-
-    $('.mario').css({
-      'transform' : 'translate('+ wScroll /10 +'%, '+ wScroll /30 +'%)'
-    });
-
-    $('.joystick').css({
-      'transform' : 'translate(0px, '+ wScroll /20 +'%)'
+      'transform' : 'translate(0px, '+ wScroll /5 +'%)'
     });
 
 
