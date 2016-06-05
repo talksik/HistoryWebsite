@@ -11,6 +11,8 @@ body {
   width: 100%;
   font-family: 'Press Start 2P', cursive;
   background-color: rgb(7, 81, 119);
+  background-position: top left;
+  min-width: 950px;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +34,7 @@ div.loader {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 999;
+  z-index: 1001;
   background-image: url(images/loader.gif);
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -47,27 +49,41 @@ div.cover {
   width: 100%;
   position: relative;
   background-color: white;
-  background-image: url(images/wallpaper4.jpg);
+  background-image: url(images/cover.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-size: 45% 135%;
+  background-position: 10%;
+  background-color: #080a0a;
   overflow: hidden;
+  min-width: 950px;
 }
 
 p.cover1 {
   margin: 0;
   padding: 0;
-  right: 0;
-  top: 30%;
-  text-align: center;
-  height: 30%;
-  vertical-align: middle;
+  right: 5%;
+  bottom: 30px;
+  text-align: right;
+  height: 200px;
   position: absolute;
-  width: 40%;
-  border: 1px solid red; */<-------border of title/quo tes place
-  font-size: 30px;
-  color: white;
-  background-color: black;
+  width: 650px;
+  /* border: 1px solid red; */<-------border of title/quotes place
+  font-weight: normal;
+  color: rgb(222, 88, 22);
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+}
+
+div.cover2 {
+  background-image: url(images/backLogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+  margin-top: 30px;
+  width: 650px;
+  position: absolute;
+  right: 5%;
+  /* border: 2px solid red; */
 }
 
 /* nav Bar */
@@ -76,7 +92,7 @@ p.cover1 {
     padding: 0;
     position: fixed;
     top: 0;
-    height: 42px;
+    height: 40px;
     width: 100%;
     border: 1px dotted blue;
     background-image: url(images/wallpaper2.jpg);
@@ -85,11 +101,15 @@ p.cover1 {
     border-bottom-left-radius: 15px;
     z-index: 1000;
     opacity: .9;
-
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    min-width: 950px;
 }
 
 ul.header {
   border: 2px solid black;
+  margin: 0px auto;
+  position: static;
 }
 ul.header li {
   text-align: center;
@@ -98,20 +118,20 @@ ul.header li {
   display: inline-block;
   /* border: 2px solid pink; */
   text-shadow: 5px 3px black;
-  margin-top: .75%;
-  font-size: 1em;
+  font-size: 20px;
+  position: static;
 }
 li.start{
   margin: 0;
   padding: 0;
-  margin-left: 18%;
+  margin-left: 25%;
   margin-right: 2%;
 }
 li.end{
   margin: 0;
   padding: 0;
   margin-left: 2%;
-  margin-right: 18%;
+  margin-right: 20%;
 }
 li.mid{
   margin: 0;
@@ -137,36 +157,37 @@ ul.header li a {
 div.intro {
   margin: 0;
   padding: 0;
-  height: 75%;
+  height: auto;
   width: 100%;
   position: relative;
   background-image: url(images/wallpaper1.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
+  overflow: hidden;
 }
-
+div.introcanvas {
+  margin: 10px 0px;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .75;
+}
 p.intro{
-  margin: 5px;
+  margin: 20px 0;
   padding: 0;
   left: 0;
-  position: absolute;
-  height:98%;
-  width:40%;
-  background-color: red;
-  opacity: .2;
+  position: relative;
+  height: auto;
+  width: 100%;
+  color: white;
+  font-family: rockwell;
+  font-size: 1.15em;
+  text-align: center;
 }
 
-p.intro2 {
-  margin: 5px;
-  padding: 0;
-  right:0;
-  height: 98%;
-  width: 58%;
-  background-color: pink;
-  position: absolute;
-  opacity: .2;
-}
 
 
 /*---------music section-----*/
@@ -187,18 +208,11 @@ div.music {
 }
 
 
-p.music1 {
-  margin: 0;
-  padding: 0;
+audio {
   position: absolute;
-  background-color: black;
-  color: white;
-  left: 30%;
   top: 0;
-  height: 10%;
-  width: 40%;
+  left: 20px;
 }
-
 
 
 /*--------Chapters---------*/
@@ -208,33 +222,31 @@ p.music1 {
 div.chapters {
   margin:0;
   padding:0;
-  height: 160%;
+  height: 1000px;
   width: 100%;
   background-image: url(images/wallpaper3.jpg);
-  background-size: 100% 100%;
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   vertical-align: middle;
   z-index: 6;
   overflow: hidden;
-  opacity: .9;
 }
 ul.chapters {
   position: absolute;
   margin: 0;
   padding: 0;
   height: 100%;
-  border: 2px solid red;
+  /* border: 2px solid black; */
   width: 100%;
-  display:inline-block;
+  display: inline-block;
 }
 div.chapters1-3 {
   margin: 0;
   padding:0;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 100%;
-  height: 50%;
+  height: 500px;
   position: relative;
 }
 
@@ -248,8 +260,10 @@ li.chapter1 {
   display: inline-block;
   left: 10%;
   top: 20%;
-  background-image: url(images/chapter1.jpg);
-  background-size: contain;
+  background-image: url(images/chapter1.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
 }
 li.chapter1:hover {
   box-shadow: inset -4.5px -3px 5px black;
@@ -274,7 +288,9 @@ li.chapter2 {
   top: 20%;
   left: 42%;
   background-image: url(images/chapter2.jpg);
-  background-size: contain;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
 }
 li.chapter2:hover {
   box-shadow: inset -4.5px -3px 5px black;
@@ -298,6 +314,10 @@ li.chapter3 {
   display:inline-block;
   top: 20%;
   right: 10%;
+  background-image: url(images/chapter3.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
 }
 li.chapter3:hover {
   box-shadow: inset -4.5px -3px 5px black;
@@ -316,12 +336,12 @@ li.chapter3:hover {
 
 
 
-div.chapters4-6 {
+div.chapters4-5 {
     margin: 0;
     padding:0;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     width: 100%;
-    height: 50%;
+    height: 500px;
     position: relative;
 }
 
@@ -335,7 +355,11 @@ li.chapter4 {
   position: absolute;
   display: inline-block;
   top: 20%;
-  left: 10%;
+  left: 25%;
+  background-image: url(images/chapter4.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
 }
 li.chapter4:hover {
   box-shadow: inset -4.5px -3px 5px black;
@@ -358,8 +382,12 @@ li.chapter5 {
   width: 250px;
   position: absolute;
   display: inline-block;
-  left: 40%;
+  left: 60%;
   top: 20%;
+  background-image: url(images/chapter5.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
 }
 li.chapter5:hover {
   box-shadow: inset -4.5px -3px 5px black;
@@ -375,27 +403,6 @@ li.chapter5:hover {
 
 
 
-li.chapter6 {
-  margin: 0;
-  padding:0;
-  height: 370px;
-  width: 250px;
-  position: absolute;
-  display: inline-block;
-  right: 10%;
-  top: 20%;
-}
-li.chapter6:hover {
-  box-shadow: inset -4.5px -3px 5px black;
-  border-color: black;
-  border-style: solid;
-  border-width: 0px;
-  opacity: .9;
-  background-color: white;
-  height: 360px;
-  width: 240px;
-}
-
 
 
 /*-------about-------*/
@@ -403,50 +410,26 @@ li.chapter6:hover {
 div.about {
   margin: 0;
   padding: 0;
+  height: 350px;
+  width: 100%;
   position: relative;
-  height: 60%;
-  width: 100%;
-  background-image: url(images/wallpaper6.jpg);
-  background-size: 100% 100%;
+  background-image: url(images/wallpaper7.jpg);
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  bottom: 0;
   overflow: hidden;
-  top: 0;
+  background-attachment: fixed;
 }
-img.mario {
+
+button {
+  background-color: rgb(14, 115, 189);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  font-weight: bold;
+  height: 30px;
   position: absolute;
-  opacity: .8;
-  height: 125px;
-  width: 125px;
-  left: 25%;
-  top: 0;
-}
-img.joystick {
-  position: absolute;
-  opacity: .8;
-  height: 125px;
-  width: 125px;
-  left: 5%;
-  top: 0;
-}
-img.mushroom {
-  position: absolute;
-  opacity: .6;
-  height: 125px;
-  width: 125px;
-  right: 35%;
-  top: 50%;
-}
+  left: 45%;
+  top: 60%;
 
-
-
-
-
-div.copyright {
-  margin: 0;
-  padding: 0;
-  height: 20%;
-  width: 100%;
-  background-color: rgb(7, 81, 119);
 }
