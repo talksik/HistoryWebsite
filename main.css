@@ -1,0 +1,435 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin:0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgb(7, 81, 119);
+  background-position: top left;
+  min-width: 950px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px black;
+}
+/*-------loading game page-----*/
+div.loader {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1001;
+  background-image: url(images/loader.gif);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+
+/*------Cover/Title------*/
+div.cover {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: white;
+  background-image: url(images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 45% 135%;
+  background-position: 10%;
+  background-color: #080a0a;
+  overflow: hidden;
+  min-width: 950px;
+}
+
+p.cover1 {
+  margin: 0;
+  padding: 0;
+  right: 5%;
+  bottom: 30px;
+  text-align: right;
+  height: 200px;
+  position: absolute;
+  width: 650px;
+  /* border: 1px solid red; */<-------border of title/quotes place
+  font-weight: normal;
+  color: rgb(222, 88, 22);
+  font-size: 40px;
+  font-family: 'Raleway', sans-serif;
+}
+
+div.cover2 {
+  background-image: url(images/backLogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
+  margin-top: 30px;
+  width: 650px;
+  position: absolute;
+  right: 5%;
+  /* border: 2px solid red; */
+}
+
+/* nav Bar */
+.header {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    border: 1px dotted blue;
+    background-image: url(images/wallpaper2.jpg);
+    background-size: cover;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 1000;
+    opacity: .9;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+    min-width: 950px;
+}
+
+ul.header {
+  border: 2px solid black;
+  margin: 0px auto;
+  position: static;
+}
+ul.header li {
+  text-align: center;
+  color: white;
+  padding: 0;
+  display: inline-block;
+  /* border: 2px solid pink; */
+  text-shadow: 5px 3px black;
+  font-size: 20px;
+  position: static;
+}
+li.start{
+  margin: 0;
+  padding: 0;
+  margin-left: 25%;
+  margin-right: 2%;
+}
+li.end{
+  margin: 0;
+  padding: 0;
+  margin-left: 2%;
+  margin-right: 20%;
+}
+li.mid{
+  margin: 0;
+  padding: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+ul.header li a:hover {
+  color: rgb(111, 111, 116);
+  text-decoration: none;
+  text-shadow: 8px 5px black;
+}
+ul.header li a {
+  color: rgb(204, 218, 203);
+  text-decoration: none;
+}
+
+
+
+
+/*------intro of Mr.Sewell segment------*/
+div.intro {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-image: url(images/wallpaper1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+}
+div.introcanvas {
+  margin: 10px 0px;
+  padding: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .75;
+}
+p.intro{
+  margin: 20px 0;
+  padding: 0;
+  left: 0;
+  position: relative;
+  height: auto;
+  width: 100%;
+  color: white;
+  font-family: rockwell;
+  font-size: 1.15em;
+  text-align: center;
+}
+
+
+
+/*---------music section-----*/
+
+
+div.music {
+  margin:0;
+  padding: 0;
+  height: 40%;
+  position: relative;
+  background-position: center;
+  width: 100%;
+  background-image: url(images/wallpaper2.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+audio {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+
+/*--------Chapters---------*/
+
+
+
+div.chapters {
+  margin:0;
+  padding:0;
+  height: 1000px;
+  width: 100%;
+  background-image: url(images/wallpaper3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  vertical-align: middle;
+  z-index: 6;
+  overflow: hidden;
+}
+ul.chapters {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* border: 2px solid black; */
+  width: 100%;
+  display: inline-block;
+}
+div.chapters1-3 {
+  margin: 0;
+  padding:0;
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+
+li.chapter1 {
+  margin: 0;
+  padding:0;
+  height: 370px;
+  width: 250px;
+  position: absolute;
+  display: inline-block;
+  left: 10%;
+  top: 20%;
+  background-image: url(images/chapter1.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+li.chapter1:hover {
+  box-shadow: inset -4.5px -3px 5px black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  opacity: .9;
+  background-color: white;
+  height: 360px;
+  width: 240px;
+}
+
+
+
+li.chapter2 {
+  margin: 0;
+  padding:0;
+  height: 370px;
+  width: 250px;
+  position: absolute;
+  display:inline-block;
+  top: 20%;
+  left: 42%;
+  background-image: url(images/chapter2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+li.chapter2:hover {
+  box-shadow: inset -4.5px -3px 5px black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  opacity: .9;
+  background-color: white;
+  height: 360px;
+  width: 240px;
+}
+
+
+
+li.chapter3 {
+  margin: 0;
+  padding:0;
+  height: 370px;
+  width: 250px;
+  position: absolute;
+  display:inline-block;
+  top: 20%;
+  right: 10%;
+  background-image: url(images/chapter3.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+li.chapter3:hover {
+  box-shadow: inset -4.5px -3px 5px black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  opacity: .9;
+  background-color: white;
+  height: 360px;
+  width: 240px;
+}
+
+
+
+
+
+
+
+div.chapters4-5 {
+    margin: 0;
+    padding:0;
+    /* border: 2px solid white; */
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+
+
+li.chapter4 {
+  margin: 0;
+  padding:0;
+  height: 370px;
+  width: 250px;
+  position: absolute;
+  display: inline-block;
+  top: 20%;
+  left: 25%;
+  background-image: url(images/chapter4.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+li.chapter4:hover {
+  box-shadow: inset -4.5px -3px 5px black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  opacity: .9;
+  background-color: white;
+  height: 360px;
+  width: 240px;
+}
+
+
+
+
+li.chapter5 {
+  margin: 0;
+  padding:0;
+  height: 370px;
+  width: 250px;
+  position: absolute;
+  display: inline-block;
+  left: 60%;
+  top: 20%;
+  background-image: url(images/chapter5.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 2px solid white;
+}
+li.chapter5:hover {
+  box-shadow: inset -4.5px -3px 5px black;
+  border-color: black;
+  border-style: solid;
+  border-width: 0px;
+  opacity: .9;
+  background-color: white;
+  height: 360px;
+  width: 240px;
+}
+
+
+
+
+
+
+/*-------about-------*/
+
+div.about {
+  margin: 0;
+  padding: 0;
+  height: 350px;
+  width: 100%;
+  position: relative;
+  background-image: url(images/wallpaper7.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+button {
+  background-color: rgb(14, 115, 189);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  border-radius: 15px;
+  font-weight: bold;
+  height: 30px;
+  position: absolute;
+  left: 45%;
+  top: 60%;
+
+}
